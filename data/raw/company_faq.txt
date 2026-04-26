@@ -1,0 +1,8 @@
+Q: What is leave policy?
+Employees get 20 paid leaves per year.
+
+Q: How to reset password?
+Go to settings → security → reset password.
+
+Q: Work from home policy?
+Employees can work remotely 2 days per week.

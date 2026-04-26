@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+streamlit
+sentence-transformers
+faiss-cpu
+pandas
+numpy
+python-dotenv
+pymupdf
+docx2txt
+openpyxl
+python-docx
+matplotlib
+tqdm
+scikit-learn
