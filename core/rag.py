@@ -1,16 +1,29 @@
 import requests
+import json
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "llama3"
 
+
+def call_ollama(prompt):
+    response = requests.post(
+        OLLAMA_URL,
+        json={
+            "model": MODEL,
+            "prompt": prompt,
+            "stream": False
+        }
+    )
+    return response.json()["response"]
+
+
 def generate_answer(query, context_chunks):
-    # ✅ context_chunks is already list of strings
     context = "\n\n".join(context_chunks)
 
-    prompt = f"""
-You are an AI assistant. Answer using ONLY the given context.
-
-Give a COMPLETE and clear answer.
+    # ✅ If context exists → RAG mode
+    if context.strip():
+        prompt = f"""
+You are an AI assistant. Answer ONLY from the context below.
 
 Context:
 {context}
@@ -18,20 +31,17 @@ Context:
 Question:
 {query}
 
+Answer clearly:
+"""
+    else:
+        # ✅ No context → normal AI (ChatGPT-like)
+        prompt = f"""
+You are a helpful AI assistant.
+
+User Question:
+{query}
+
 Answer:
 """
 
-    try:
-        response = requests.post(
-            OLLAMA_URL,
-            json={
-                "model": MODEL,
-                "prompt": prompt,
-                "stream": False
-            }
-        )
-
-        return response.json()["response"]
-
-    except Exception as e:
-        return f"❌ Error: {e}"
+    return call_ollama(prompt)
