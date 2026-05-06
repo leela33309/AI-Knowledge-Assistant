@@ -1,0 +1,3 @@
+Employees may work from home twice per week with manager approval.
+WFH requests should be raised one day in advance.
+Availability during business hours is mandatory.

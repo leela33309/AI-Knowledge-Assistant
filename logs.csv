@@ -1,0 +1,95 @@
+timestamp,query,answer,latency,sources_used
+2026-04-28 12:56:57,what is python ?,Answer not found in uploaded knowledge base.,22.15,0
+2026-04-28 12:57:12,hi,Hi 😊 How can I help you today?,0.05,0
+2026-04-28 13:03:13,what were Retrieval-Augmented Generation,"⚠️ Error: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5)",7.08,5
+2026-04-28 13:18:56,hi,Hi 😊 How can I help you today?,0.06,0
+2026-04-28 13:20:38,when do i have to complete this ?,"The context does not specify a deadline or completion date for the project setup tasks listed under ""A."" Therefore, I cannot provide an exact timeframe from the given information alone. Please refer to your team's timeline or project manager for specific due dates related to these tasks. If no such details are provided in other sources of knowledge base, you may reply with: Answer not found in uploaded knowledge base.
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5)",51.28,5
+2026-04-28 13:21:37,then what is this task all about ?,"This project involves creating and understanding an AI-based question answering (QA) system using Retrieval Augmented Generation (READ). It includes setting up the local environment for running experiments, evaluating performance metrics like recall@k and citation coverage, ensuring security compliance with data handling practices. The goal is to demonstrate practical skills in embeddings, LLMs, retrieval techniques, and presenting a mini internal knowledge assistant system as an end-to-end workflow from question input to streaming or incremental answer display.
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5)",32.0,5
+2026-04-28 13:23:06,okay can you tell me what is python this is not in doc but i want you to give ans normally ?,"Python is a high-level, interpreted programming language with dynamic typing and garbage collection. It supports multiple programming paradigms and has been widely used for web development, data analysis, artificial intelligence, scientific computing, and more. Python code typically follows the syntax rules of English grammar to some extent, making it relatively easy to read and write compared to other languages that require semicolons or braces.
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5)",28.16,5
+2026-04-28 13:23:44,what is java,"Java is a high-level, class-based programming language designed to have as few implementation dependencies as possible, allowing applications developed in Java to run on any device with a compatible operating system and hardware configuration. It's widely used for building enterprise-scale applications, Android apps, web applications, and more due to its portability, performance, and robustness.
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5)",27.81,5
+2026-04-28 13:41:19,What contact details are mentioned?,"Email and phone number have been redacted for privacy reasons. Please provide the necessary information to proceed with your inquiry.
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5)",46.68,5
+2026-04-28 13:49:01,What contact details are mentioned?,"Email: lch***@gmail.com; Phone: +********7344 Linkedin Profile URL is not provided in the context.
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5)",41.92,5
+2026-04-28 14:18:02,what is this all about ?,"A job application from an MCA graduate with technical and problem-solving skills seeking an Associate Tech Service Desk role at Unisys. The candidate has experience in troubleshooting web and backend systems for Windows and Office environments. They possess a Master of Computer Applications degree, have strong communication & presentation skills, are quick learners, analytical thinkers, and team collaborators with proficiency in various technical tools and programming languages including Java, SQL, JavaScript (Basics), Python, as well as Microsoft Tools like MS Office 365.
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5)",68.08,5
+2026-05-03 22:36:19,what is this pdf all about,"⚠️ Error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(""HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it""))
+
+📌 Sources:
+AI Roadmap Task.pdf | PDF | Page 6 | Chunk 1
+AI Roadmap Task.pdf | PDF | Page 5 | Chunk 1
+AI Roadmap Task.pdf | PDF | Page 3 | Chunk 1",4.17,3,ERROR,FAILED
+2026-05-03 22:40:11,hi,Hi 😊 How can I help you today?,0.0,0,LLM,SUCCESS
+2026-05-03 22:41:52,what is this pdf all about,"This PDF appears to be a project guide for creating and deploying an AI assistant, including details on the RAG pipeline, local extension tools, evaluation logging, security compliance measures, as well as optional extensions like hybrid retrieval models and usage dashboards. It also includes instructions for setting up Docker-based deployment environments.
+
+📌 Sources:
+AI Roadmap Task.pdf | PDF | Page 6 | Chunk 1
+AI Roadmap Task.pdf | PDF | Page 5 | Chunk 1
+AI Roadmap Task.pdf | PDF | Page 3 | Chunk 1",45.01,3,LLM,SUCCESS
+2026-05-03 22:42:03,what is this pdf all about,"This PDF appears to be a project guide for creating and deploying an AI assistant, including details on the RAG pipeline, local extension tools, evaluation logging, security compliance measures, as well as optional extensions like hybrid retrieval models and usage dashboards. It also includes instructions for setting up Docker-based deployment environments.
+
+⚡ Cached Response
+
+📌 Sources:
+AI Roadmap Task.pdf | PDF | Page 6 | Chunk 1
+AI Roadmap Task.pdf | PDF | Page 5 | Chunk 1
+AI Roadmap Task.pdf | PDF | Page 3 | Chunk 1",0.06,3,CACHE,SUCCESS
+2026-05-04 09:39:22,what email or number this pdf consists ?,"lchandavargmail.com, ********7344
+
+📌 Sources:
+LEELA VATI _CHANDAVAR  NT RESUME.pdf | PDF | Page 1 | Chunk 1
+LEELA VATI _CHANDAVAR  NT RESUME.pdf | PDF | Page 1 | Chunk 2
+LEELA VATI _CHANDAVAR  NT RESUME.pdf | PDF | Page 2 | Chunk 1",50.18,3,LLM,SUCCESS

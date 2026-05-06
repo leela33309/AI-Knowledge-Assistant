@@ -1,0 +1,3 @@
+Install VPN client from company portal.
+Login using employee ID and MFA authentication.
+Report connection issues to IT helpdesk.

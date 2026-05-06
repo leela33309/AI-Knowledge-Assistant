@@ -1,0 +1,65 @@
+Timestamp,Question,Answer,Latency_Seconds,Sources_Used
+2026-04-28 11:02:48,what is this all about ?,"⚠️ Error: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)",5.4,3
+2026-04-28 11:03:13,what is this task all about ?,"⚠️ Error: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)",4.45,3
+2026-04-28 11:18:11,hi,"Hi 😊 How can I help you today?
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)",0.16,3
+2026-04-28 11:19:13,what is this task all about ?,"Based on the provided context, this task appears to be related to discussing employee policies, specifically work from home and leave policies.
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)",54.47,3
+2026-04-28 11:35:18,what is this all about ?,"⚠️ Error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5)",122.23,5
+2026-04-28 11:43:02,what is this all about ?,"⚠️ Error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5)",122.18,5
+2026-04-28 11:56:01,what is this all about ?,"This document outlines the tasks and setup for creating an internal knowledge base using ChatGPT to generate synthetic data and provide grounded answers based on structured documents within local folders. It also includes security measures, packaging instructions, and expected outcome details. The project aims to enhance information retrieval through AI-driven citation interface with clear documentation for setup steps.
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (C",66.13,5
+2026-04-28 12:18:54,what is this all about ?,"This project outline describes the development of an internal knowledge assistant using Retrieval Augmented Generation (RAG) technology to provide end-to-end explanations and functionalities such as document ingestion, synthetic data generation, chunking for vector indexing, retrieval with LLMs, a simple web UI interface, evaluation metrics logging, security measures, packaging details including demo scripts, expected outcomes like understanding RAG pipelines and scaling designs in cloud environ",76.79,5
+2026-04-28 12:41:49,what is this all about ?,"This project outline details the development of an internal knowledge assistant using Retrieval Augmented Generation (RAG) technology to provide contextually relevant answers and information retrieval capabilities within a local or cloud environment. It includes functional areas for data ingestion, synthetic data generation, chunking & indexing, retrieval & response, user interface design, evaluation metrics tracking, security measures, packaging instructions, expected outcomes in terms of skill",84.47,5
+2026-04-28 12:49:27,what is this all about ?,"This project provides comprehensive guidelines for building an internal knowledge assistant using local and cloud resources, focusing on ingestion of documents, data synthesis, chunking, indexing, retrieval, LLM integration, user interface development, evaluation metrics tracking, security measures, packaging instructions, optional extensions, and deployment methods.
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5",68.44,5
+2026-04-28 12:50:59,when do i have to complete it ?,"The context does not specify a deadline for completing the AI Knowledge Assistant project; therefore, I cannot provide an exact date or timeframe based on the provided information alone. Please refer to any additional documentation or instructions that may have been uploaded separately regarding timelines and milestones.
+
+📌 Sources:
+Uploaded File (Chunk 1)
+Uploaded File (Chunk 2)
+Uploaded File (Chunk 3)
+Uploaded File (Chunk 4)
+Uploaded File (Chunk 5)",59.39,5

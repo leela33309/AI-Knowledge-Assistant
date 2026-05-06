@@ -1,0 +1,3 @@
+Employees are entitled to 20 paid leaves annually.
+Sick leave requires manager approval after 2 consecutive days.
+Unused leave can be carried forward up to 10 days.

@@ -1,0 +1,3 @@
+Passwords must contain minimum 12 characters.
+Use uppercase, lowercase, numbers and symbols.
+Passwords expire every 90 days.
