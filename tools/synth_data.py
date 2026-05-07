@@ -2,12 +2,21 @@ import os
 import json
 from datetime import datetime
 
-# Output folder
+# =========================
+# OUTPUT DIRECTORY
+# =========================
 OUTPUT_DIR = "data/generated_docs"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
 
+os.makedirs(
+    OUTPUT_DIR,
+    exist_ok=True
+)
 
+# =========================
+# SYNTHETIC DOCUMENTS
+# =========================
 documents = [
+
     {
         "title": "HR Leave Policy",
         "type": "policy",
@@ -33,7 +42,7 @@ Availability during business hours is mandatory.
     {
         "title": "New Employee Onboarding Guide",
         "type": "guide",
-        "tags": ["onboarding", "new joiner"],
+        "tags": ["onboarding", "new_joiner"],
         "content": """
 Day 1 includes laptop allocation, email setup, HR induction and project introduction.
 Complete mandatory training modules within first 7 days.
@@ -65,7 +74,7 @@ Passwords expire every 90 days.
     {
         "title": "Frequently Asked Questions",
         "type": "faq",
-        "tags": ["faq"],
+        "tags": ["faq", "support"],
         "content": """
 Q: How to apply leave?
 A: Use HRMS portal.
@@ -79,24 +88,74 @@ A: Contact IT support.
     }
 ]
 
+# =========================
+# GENERATE FILES
+# =========================
+for index, doc in enumerate(
+    documents,
+    start=1
+):
 
-for i, doc in enumerate(documents, start=1):
-    filename = f"{OUTPUT_DIR}/doc_{i}.txt"
+    base_filename = f"doc_{index}"
 
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(doc["content"].strip())
+    text_path = os.path.join(
+        OUTPUT_DIR,
+        f"{base_filename}.txt"
+    )
 
+    metadata_path = os.path.join(
+        OUTPUT_DIR,
+        f"{base_filename}.json"
+    )
+
+    # =====================
+    # SAVE TEXT CONTENT
+    # =====================
+    with open(
+        text_path,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        file.write(
+            doc["content"].strip()
+        )
+
+    # =====================
+    # METADATA
+    # =====================
     metadata = {
         "title": doc["title"],
         "type": doc["type"],
         "tags": doc["tags"],
-        "date": str(datetime.now().date())
+        "source": text_path,
+        "created_date": str(
+            datetime.now().date()
+        )
     }
 
-    meta_file = f"{OUTPUT_DIR}/doc_{i}.json"
+    # =====================
+    # SAVE METADATA
+    # =====================
+    with open(
+        metadata_path,
+        "w",
+        encoding="utf-8"
+    ) as meta_file:
 
-    with open(meta_file, "w", encoding="utf-8") as f:
-        json.dump(metadata, f, indent=4)
+        json.dump(
+            metadata,
+            meta_file,
+            indent=4
+        )
 
-print("✅ Synthetic documents generated successfully!")
-print("📁 Location:", OUTPUT_DIR)
+# =========================
+# SUCCESS MESSAGE
+# =========================
+print(
+    f"✅ Generated {len(documents)} synthetic documents"
+)
+
+print(
+    f"📁 Output Location: {OUTPUT_DIR}"
+)

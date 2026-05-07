@@ -93,3 +93,19 @@ AI Roadmap Task.pdf | PDF | Page 3 | Chunk 1",0.06,3,CACHE,SUCCESS
 LEELA VATI _CHANDAVAR  NT RESUME.pdf | PDF | Page 1 | Chunk 1
 LEELA VATI _CHANDAVAR  NT RESUME.pdf | PDF | Page 1 | Chunk 2
 LEELA VATI _CHANDAVAR  NT RESUME.pdf | PDF | Page 2 | Chunk 1",50.18,3,LLM,SUCCESS
+2026-05-06 13:14:18,what is this pdf all about,"This PDF Report details a project data cleaning process for infrastructure analysis using AI tools like GenAI, with manual review by Leelavati M Chandavar Taiyo as the final step to ensure accuracy and completeness in preparation for downstream analytics. The report includes methodologies used, limitations encountered, and concludes that the dataset is now consistent, cleaned, and ready for analysis.
+
+📌 Sources:
+Assesment report.pdf | PDF | Page 6 | Chunk 1
+Assesment report.pdf | PDF | Page 1 | Chunk 1
+Assesment report.pdf | PDF | Page 4 | Chunk 1",50.46,3,LLM,SUCCESS
+2026-05-07 15:48:20,what is this all about ?,"This context provides information on various company policies, including leave policy (employees get 20 paid leaves annually), password reset procedure (go to settings → security → reset password), and work from home policy (up to two days per week with prior approval). The question ""what is this all about?"" seems unrelated to the provided context.
+
+📌 Sources:
+company_faq.txt
+doc_2.json",32.39,2,LLM,SUCCESS
+2026-05-07 16:07:37,what is this pdf all about,"This PDF outlines the company's leave policy, password reset procedure, and remote work guidelines for employees. It provides details on annual paid leaves allowed per employee, steps to recover a lost or forgotten password using internal settings, as well as conditions under which an employee can work from home including necessary approval processes.
+
+📌 Sources:
+company_faq.txt
+doc_2.json",27.32,2,LLM,SUCCESS

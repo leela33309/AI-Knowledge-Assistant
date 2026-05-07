@@ -1,0 +1,14 @@
+[
+    {
+        "question": "How to reset password?",
+        "expected_source": "doc_1.json"
+    },
+    {
+        "question": "How many paid leaves are allowed?",
+        "expected_source": "doc_0.json"
+    },
+    {
+        "question": "What is the leave policy?",
+        "expected_source": "doc_0.json"
+    }
+]

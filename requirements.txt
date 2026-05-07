@@ -13,3 +13,24 @@ python-docx
 matplotlib
 tqdm
 scikit-learn
+
+streamlit
+fastapi
+uvicorn
+requests
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+python-docx
+python-dotenv
+pymupdf
+docx2txt
+openpyxl
+pydantic
+matplotlib
+
+cd C:\AI-Knowledge-Assistant
+streamlit run ui/app.py
+
+pip install torch torchvision

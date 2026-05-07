@@ -2,7 +2,9 @@
     "title": "Frequently Asked Questions",
     "type": "faq",
     "tags": [
-        "faq"
+        "faq",
+        "support"
     ],
-    "date": "2026-04-28"
+    "source": "data/generated_docs\\doc_6.txt",
+    "created_date": "2026-05-07"
 }

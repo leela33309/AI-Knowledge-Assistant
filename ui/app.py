@@ -3,6 +3,7 @@ import sys
 import os
 import time
 import pandas as pd
+import requests
 from io import BytesIO
 from docx import Document
 from dotenv import load_dotenv
@@ -28,8 +29,6 @@ sys.path.append(
 # =========================
 # IMPORT MODULES
 # =========================
-from core.embed_search import search
-from core.rag import generate_answer
 from core.file_loader import load_uploaded_file
 from core.vector_store import create_index, search_index
 from core.logger import log_query
@@ -219,7 +218,6 @@ def handle_query():
             "content": query
         })
 
-        context_chunks = []
         sources = []
 
         # =====================
@@ -232,129 +230,43 @@ def handle_query():
         else:
 
             # =====================
-            # FILE SEARCH MODE
+            # API MODE
             # =====================
-            if st.session_state.file_chunks:
+            try:
 
-                try:
+                response = requests.post(
+                    "http://127.0.0.1:8000/ask",
+                    json={
+                        "question": query
+                    }
+                )
 
-                    relevant_chunks = search_index(
-                        query=query,
-                        top_k=5
-                    )
+                data = response.json()
 
-                    reranked = []
+                answer = data.get(
+                    "answer",
+                    "No response generated."
+                )
 
-                    for item in relevant_chunks:
+                api_sources = data.get(
+                    "sources",
+                    []
+                )
 
-                        text = item.get(
-                            "content",
-                            ""
-                        ).lower()
+                for item in api_sources:
 
-                        score = 0
-
-                        for word in query.lower().split():
-
-                            if word in text:
-                                score += 1
-
-                        item["rerank_score"] = score
-
-                        reranked.append(item)
-
-                    reranked = sorted(
-                        reranked,
-                        key=lambda x:
-                        x["rerank_score"],
-                        reverse=True
-                    )
-
-                    for item in reranked[:3]:
-
-                        context_chunks.append(
-                            item.get(
-                                "content",
-                                ""
-                            )
-                        )
+                    if isinstance(item, dict):
 
                         src = item.get(
                             "source",
-                            "File"
+                            "Knowledge Base"
                         )
 
-                        pg = item.get(
-                            "page",
-                            1
-                        )
+                        sources.append(src)
 
-                        ch = item.get(
-                            "chunk",
-                            1
-                        )
+            except Exception as e:
 
-                        ft = item.get(
-                            "file_type",
-                            ""
-                        )
-
-                        sources.append(
-                            f"{src} | {ft.upper()} | Page {pg} | Chunk {ch}"
-                        )
-
-                except Exception:
-
-                    for item in st.session_state.file_chunks[:3]:
-
-                        if isinstance(item, dict):
-
-                            context_chunks.append(
-                                item.get(
-                                    "content",
-                                    ""
-                                )
-                            )
-
-            # =====================
-            # BASE KNOWLEDGE MODE
-            # =====================
-            else:
-
-                try:
-
-                    results = search(
-                        query,
-                        k=3
-                    )
-
-                    for r in results:
-
-                        if isinstance(r, dict):
-
-                            context_chunks.append(
-                                r.get(
-                                    "content",
-                                    ""
-                                )
-                            )
-
-                        else:
-
-                            context_chunks.append(
-                                str(r)
-                            )
-
-                except:
-                    pass
-
-            # =====================
-            # GENERATE ANSWER
-            # =====================
-            answer = generate_answer(
-                query,
-                context_chunks
-            )
+                answer = f"⚠️ API Error: {str(e)}"
 
         # =====================
         # SOURCES

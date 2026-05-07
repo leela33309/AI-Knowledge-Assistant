@@ -3,7 +3,8 @@
     "type": "guide",
     "tags": [
         "onboarding",
-        "new joiner"
+        "new_joiner"
     ],
-    "date": "2026-04-28"
+    "source": "data/generated_docs\\doc_3.txt",
+    "created_date": "2026-05-07"
 }
